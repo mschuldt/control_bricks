@@ -1,0 +1,12 @@
+Control Bricks
+
+A collection of composable PCBs for building simple automation solutions.
+
+Bricks are connected in sequence, each performing a simple function before
+passing control to the next brick. 
+Bricks can have inputs for sensors and outputs for actuators.
+
+The goal is to create reliable and maintainable solutions 
+without any custom application specific software. 
+The PCBs provide buttons and indicators for the control interface. 
+Each output has buttons for manual activation for testing and debugging.
