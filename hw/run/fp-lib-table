@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name autoblocks)(type KiCad)(uri /home/mschuldt/a/projects/automation-blocks/hw/autoblocks.pretty)(options "")(descr ""))
+)
