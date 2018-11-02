@@ -547,17 +547,6 @@ Wire Wire Line
 	10200 5300 10450 5300
 Wire Wire Line
 	10200 5400 10450 5400
-$Comp
-L Switch:SW_Push_Dual SW3
-U 1 1 5BD55A24
-P 4500 2700
-F 0 "SW3" H 4500 2985 50  0000 C CNN
-F 1 "switch_reset" H 4500 2894 50  0000 C CNN
-F 2 "autoblocks:SW_PUSH_6mm_H5mm" H 4500 2900 50  0001 C CNN
-F 3 "" H 4500 2900 50  0001 C CNN
-	1    4500 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 2700 4850 2700
 Wire Wire Line
@@ -629,16 +618,6 @@ Wire Wire Line
 	3100 2100 3200 2100
 Wire Wire Line
 	3100 2200 3200 2200
-Wire Wire Line
-	4250 2900 4250 3000
-Wire Wire Line
-	4250 3000 4750 3000
-Wire Wire Line
-	4300 2900 4250 2900
-Wire Wire Line
-	4700 2900 4750 2900
-Wire Wire Line
-	4750 2900 4750 3000
 Wire Wire Line
 	3100 2000 3200 2000
 Wire Wire Line
@@ -755,17 +734,6 @@ F 3 "~" H 1650 5850 50  0001 C CNN
 	1    1650 5850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push_Dual SW1
-U 1 1 5BC62516
-P 9250 1850
-F 0 "SW1" H 9250 2135 50  0000 C CNN
-F 1 "reset_count" H 9250 2044 50  0000 C CNN
-F 2 "autoblocks:SW_PUSH_6mm_H5mm" H 9250 2050 50  0001 C CNN
-F 3 "" H 9250 2050 50  0001 C CNN
-	1    9250 1850
-	1    0    0    -1  
-$EndComp
 Text GLabel 6700 3550 0    50   Input ~ 0
 a3
 Text GLabel 6950 3550 2    50   Input ~ 0
@@ -789,59 +757,6 @@ Wire Wire Line
 	8850 1850 9050 1850
 Wire Wire Line
 	9450 1850 9700 1850
-Wire Wire Line
-	9050 2050 8950 2050
-Wire Wire Line
-	8950 2050 8950 2150
-Wire Wire Line
-	8950 2150 9550 2150
-Wire Wire Line
-	9550 2150 9550 2050
-Wire Wire Line
-	9550 2050 9450 2050
-Wire Wire Line
-	850  5950 850  6000
-Wire Wire Line
-	850  6000 1150 6000
-Wire Wire Line
-	1150 6000 1150 5950
-Wire Wire Line
-	1150 6000 1250 6000
-Wire Wire Line
-	1400 6000 1400 5950
-Connection ~ 1150 6000
-Wire Wire Line
-	1400 6000 1650 6000
-Wire Wire Line
-	1650 6000 1650 5950
-Connection ~ 1400 6000
-$Comp
-L power:GND #PWR0102
-U 1 1 5BC936D3
-P 1250 6100
-F 0 "#PWR0102" H 1250 5850 50  0001 C CNN
-F 1 "GND" H 1255 5927 50  0000 C CNN
-F 2 "" H 1250 6100 50  0001 C CNN
-F 3 "" H 1250 6100 50  0001 C CNN
-	1    1250 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 6100 1250 6000
-Connection ~ 1250 6000
-Wire Wire Line
-	1250 6000 1400 6000
-$Comp
-L Connector:Conn_01x01_Male J4
-U 1 1 5BC9D551
-P 7150 4000
-F 0 "J4" H 7050 4000 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 6650 4000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7150 4000 50  0001 C CNN
-F 3 "~" H 7150 4000 50  0001 C CNN
-	1    7150 4000
-	-1   0    0    1   
-$EndComp
 Text GLabel 6700 4000 0    50   Input ~ 0
 d9
 Text GLabel 6700 4150 0    50   Input ~ 0
@@ -851,44 +766,37 @@ d11
 Text GLabel 6700 4450 0    50   Input ~ 0
 a2
 $Comp
-L Connector:Conn_01x01_Male J5
-U 1 1 5BCACA1A
-P 7150 4150
-F 0 "J5" H 7050 4150 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 6650 4150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7150 4150 50  0001 C CNN
-F 3 "~" H 7150 4150 50  0001 C CNN
-	1    7150 4150
-	-1   0    0    1   
+L Switch:SW_Push_Dual SW1
+U 1 1 5BC62516
+P 9250 1850
+F 0 "SW1" H 9250 2135 50  0000 C CNN
+F 1 "reset_count" H 9250 2044 50  0000 C CNN
+F 2 "autoblocks:SW_PUSH_6mm_H5mm" H 9250 2050 50  0001 C CNN
+F 3 "" H 9250 2050 50  0001 C CNN
+	1    9250 1850
+	1    0    0    -1  
 $EndComp
+NoConn ~ 9450 2050
+NoConn ~ 9050 2050
 $Comp
-L Connector:Conn_01x01_Male J6
-U 1 1 5BCACA54
-P 7150 4300
-F 0 "J6" H 7050 4300 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 6650 4300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7150 4300 50  0001 C CNN
-F 3 "~" H 7150 4300 50  0001 C CNN
-	1    7150 4300
-	-1   0    0    1   
+L Switch:SW_Push_Dual SW3
+U 1 1 5BD55A24
+P 4500 2700
+F 0 "SW3" H 4500 2985 50  0000 C CNN
+F 1 "switch_reset" H 4500 2894 50  0000 C CNN
+F 2 "autoblocks:SW_PUSH_6mm_H5mm" H 4500 2900 50  0001 C CNN
+F 3 "" H 4500 2900 50  0001 C CNN
+	1    4500 2700
+	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Male J7
-U 1 1 5BCACA8E
-P 7150 4450
-F 0 "J7" H 7050 4450 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 6650 4450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7150 4450 50  0001 C CNN
-F 3 "~" H 7150 4450 50  0001 C CNN
-	1    7150 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6700 4000 6950 4000
-Wire Wire Line
-	6700 4150 6950 4150
-Wire Wire Line
-	6700 4300 6950 4300
-Wire Wire Line
-	6700 4450 6950 4450
+NoConn ~ 4700 2900
+NoConn ~ 4300 2900
+NoConn ~ 850  5950
+NoConn ~ 1150 5950
+NoConn ~ 1400 5950
+NoConn ~ 1650 5950
+NoConn ~ 6700 4000
+NoConn ~ 6700 4150
+NoConn ~ 6700 4300
+NoConn ~ 6700 4450
 $EndSCHEMATC

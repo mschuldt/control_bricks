@@ -589,24 +589,6 @@ Wire Wire Line
 Text GLabel 6700 2000 0    50   Input ~ 0
 a4
 Wire Wire Line
-	9450 2900 9400 2900
-Wire Wire Line
-	9400 2900 9400 3000
-Wire Wire Line
-	9400 3000 9850 3000
-Wire Wire Line
-	9850 3000 9850 2900
-Wire Wire Line
-	4250 2900 4250 3000
-Wire Wire Line
-	4250 3000 4750 3000
-Wire Wire Line
-	4300 2900 4250 2900
-Wire Wire Line
-	4700 2900 4750 2900
-Wire Wire Line
-	4750 2900 4750 3000
-Wire Wire Line
 	4450 4150 4650 4150
 Wire Wire Line
 	2500 1400 2500 1500
@@ -686,28 +668,6 @@ F 3 "~" H 1400 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
-U 1 1 5BCCEE7F
-P 1250 5850
-F 0 "#PWR024" H 1250 5600 50  0001 C CNN
-F 1 "GND" H 1255 5677 50  0000 C CNN
-F 2 "" H 1250 5850 50  0001 C CNN
-F 3 "" H 1250 5850 50  0001 C CNN
-	1    1250 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 5550 1000 5700
-Wire Wire Line
-	1000 5700 1250 5700
-Wire Wire Line
-	1400 5700 1400 5550
-Wire Wire Line
-	1250 5850 1250 5700
-Connection ~ 1250 5700
-Wire Wire Line
-	1250 5700 1400 5700
-$Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5BCDCAFD
 P 1750 5450
@@ -718,11 +678,6 @@ F 3 "~" H 1750 5450 50  0001 C CNN
 	1    1750 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 5550 1750 5700
-Wire Wire Line
-	1750 5700 1400 5700
-Connection ~ 1400 5700
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5BCEB76A
@@ -734,11 +689,6 @@ F 3 "~" H 700 5450 50  0001 C CNN
 	1    700  5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	700  5550 700  5700
-Wire Wire Line
-	700  5700 1000 5700
-Connection ~ 1000 5700
 $Comp
 L Connector:Conn_01x03_Male J5
 U 1 1 5BCF2D95
@@ -924,4 +874,12 @@ F 3 "~" H 1000 5450 50  0001 C CNN
 	1    1000 5450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 700  5550
+NoConn ~ 1000 5550
+NoConn ~ 1400 5550
+NoConn ~ 1750 5550
+NoConn ~ 4700 2900
+NoConn ~ 4300 2900
+NoConn ~ 9850 2900
+NoConn ~ 9450 2900
 $EndSCHEMATC
