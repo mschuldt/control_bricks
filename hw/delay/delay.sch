@@ -1006,20 +1006,18 @@ F 3 "" H 10150 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 9850 1100 0    50   Input ~ 0
-bus2
-Text GLabel 9850 1200 0    50   Input ~ 0
 bus3
-Text GLabel 9850 1300 0    50   Input ~ 0
+Text GLabel 9850 1200 0    50   Input ~ 0
 bus4
-Text GLabel 9850 1400 0    50   Input ~ 0
+Text GLabel 9850 1300 0    50   Input ~ 0
 bus5
-Text GLabel 9850 1500 0    50   Input ~ 0
+Text GLabel 9850 1400 0    50   Input ~ 0
 bus6
-Text GLabel 9850 1600 0    50   Input ~ 0
+Text GLabel 9850 1500 0    50   Input ~ 0
 bus7
-Text GLabel 9850 1700 0    50   Input ~ 0
+Text GLabel 9850 1600 0    50   Input ~ 0
 bus8
-Text GLabel 9850 1800 0    50   Input ~ 0
+Text GLabel 9850 1700 0    50   Input ~ 0
 bus9
 Wire Wire Line
 	10450 1100 10600 1100
@@ -1210,13 +1208,13 @@ $EndComp
 $Comp
 L Switch:SW_DIP_x08 SW6
 U 1 1 5C35B265
-P 7550 1500
-F 0 "SW6" H 7550 900 50  0000 C CNN
-F 1 "ID" H 7550 1000 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads" H 7550 1500 50  0001 C CNN
-F 3 "" H 7550 1500 50  0001 C CNN
-	1    7550 1500
-	-1   0    0    1   
+P 7550 1600
+F 0 "SW6" H 7550 1000 50  0000 C CNN
+F 1 "ID" H 7550 1100 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads" H 7550 1600 50  0001 C CNN
+F 3 "" H 7550 1600 50  0001 C CNN
+	1    7550 1600
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x06_Male J1
@@ -1288,4 +1286,6 @@ F 3 "~" H 9750 6100 50  0001 C CNN
 	1    9750 6100
 	0    1    1    0   
 $EndComp
+Text GLabel 9850 1800 0    50   Input ~ 0
+bus10
 $EndSCHEMATC
