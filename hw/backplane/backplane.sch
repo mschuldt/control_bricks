@@ -29,8 +29,6 @@ Text GLabel 2500 3450 0    50   Input ~ 0
 bus1
 Text GLabel 2500 3550 0    50   Input ~ 0
 next_1
-Text GLabel 2500 3650 0    50   Input ~ 0
-next_6
 Text GLabel 2500 3750 0    50   Input ~ 0
 bus4
 Text GLabel 2500 3850 0    50   Input ~ 0
@@ -214,8 +212,6 @@ F 3 "~" H 9500 3750 50  0001 C CNN
 $EndComp
 Text GLabel 9300 3450 0    50   Input ~ 0
 bus1
-Text GLabel 9300 3550 0    50   Input ~ 0
-next_6
 Text GLabel 9300 3650 0    50   Input ~ 0
 next_5
 Text GLabel 9300 3750 0    50   Input ~ 0
@@ -650,4 +646,75 @@ Text GLabel 8450 2150 2    50   Input ~ 0
 bus13
 Text GLabel 9950 2100 2    50   Input ~ 0
 bus13
+NoConn ~ 2500 3650
+NoConn ~ 9300 3550
+$Comp
+L Connector:Screw_Terminal_01x02 J13
+U 1 1 5BFAB153
+P 2550 6400
+F 0 "J13" H 2470 6075 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 3100 5950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 6400 50  0001 C CNN
+F 3 "~" H 2550 6400 50  0001 C CNN
+	1    2550 6400
+	-1   0    0    1   
+$EndComp
+Text GLabel 2950 6300 2    50   Input ~ 0
+bus14
+Text GLabel 2950 6400 2    50   Input ~ 0
+bus12
+Text GLabel 2950 6500 2    50   Input ~ 0
+bus11
+Text GLabel 2950 6200 2    50   Input ~ 0
+bus13
+Wire Wire Line
+	2750 6300 2850 6300
+Wire Wire Line
+	2950 6200 2850 6200
+Wire Wire Line
+	2850 6200 2850 6300
+Connection ~ 2850 6300
+Wire Wire Line
+	2850 6300 2950 6300
+Wire Wire Line
+	2950 6400 2850 6400
+Wire Wire Line
+	2850 6400 2850 6500
+Wire Wire Line
+	2850 6500 2950 6500
+Connection ~ 2850 6400
+Wire Wire Line
+	2850 6400 2750 6400
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5BFABCF4
+P 2950 6650
+F 0 "#FLG02" H 2950 6725 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 6778 50  0000 L CNN
+F 2 "" H 2950 6650 50  0001 C CNN
+F 3 "~" H 2950 6650 50  0001 C CNN
+	1    2950 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5BFABD57
+P 2900 6050
+F 0 "#FLG01" H 2900 6125 50  0001 C CNN
+F 1 "PWR_FLAG" V 2900 6178 50  0000 L CNN
+F 2 "" H 2900 6050 50  0001 C CNN
+F 3 "~" H 2900 6050 50  0001 C CNN
+	1    2900 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 6050 2850 6050
+Wire Wire Line
+	2850 6050 2850 6200
+Connection ~ 2850 6200
+Wire Wire Line
+	2850 6500 2850 6650
+Wire Wire Line
+	2850 6650 2950 6650
+Connection ~ 2850 6500
 $EndSCHEMATC
