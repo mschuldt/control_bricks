@@ -258,7 +258,7 @@ U 1 1 5BFC86A1
 P 1750 1400
 F 0 "J4" H 1800 1917 50  0000 C CNN
 F 1 "BUS" H 1800 1826 50  0000 C CNN
-F 2 "" H 1750 1400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 1750 1400 50  0001 C CNN
 F 3 "~" H 1750 1400 50  0001 C CNN
 	1    1750 1400
 	1    0    0    -1  
@@ -300,10 +300,10 @@ bus12
 Text GLabel 1650 2700 2    50   Input ~ 0
 bus11
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG02
 U 1 1 5BFCA5F3
 P 1650 3150
-F 0 "#FLG?" H 1650 3225 50  0001 C CNN
+F 0 "#FLG02" H 1650 3225 50  0001 C CNN
 F 1 "PWR_FLAG" V 1650 3278 50  0000 L CNN
 F 2 "" H 1650 3150 50  0001 C CNN
 F 3 "~" H 1650 3150 50  0001 C CNN
@@ -311,10 +311,10 @@ F 3 "~" H 1650 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG01
 U 1 1 5BFCA61C
 P 1650 2600
-F 0 "#FLG?" H 1650 2675 50  0001 C CNN
+F 0 "#FLG01" H 1650 2675 50  0001 C CNN
 F 1 "PWR_FLAG" V 1650 2728 50  0000 L CNN
 F 2 "" H 1650 2600 50  0001 C CNN
 F 3 "~" H 1650 2600 50  0001 C CNN
@@ -322,10 +322,10 @@ F 3 "~" H 1650 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR05
 U 1 1 5BFCA645
 P 1350 2950
-F 0 "#PWR?" H 1350 2800 50  0001 C CNN
+F 0 "#PWR05" H 1350 2800 50  0001 C CNN
 F 1 "VCC" V 1367 3078 50  0000 L CNN
 F 2 "" H 1350 2950 50  0001 C CNN
 F 3 "" H 1350 2950 50  0001 C CNN
@@ -333,10 +333,10 @@ F 3 "" H 1350 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 5BFCA70C
 P 1350 2800
-F 0 "#PWR?" H 1350 2550 50  0001 C CNN
+F 0 "#PWR04" H 1350 2550 50  0001 C CNN
 F 1 "GND" V 1355 2672 50  0000 R CNN
 F 2 "" H 1350 2800 50  0001 C CNN
 F 3 "" H 1350 2800 50  0001 C CNN
@@ -372,71 +372,83 @@ Connection ~ 1500 3050
 Wire Wire Line
 	1500 3050 1500 3150
 $Comp
-L Switch:SW_DIP_x08 SW?
+L Switch:SW_DIP_x08 SW1
 U 1 1 5BFDB299
-P 3650 1550
-F 0 "SW?" H 3650 2217 50  0000 C CNN
-F 1 "SW_DIP_x08" H 3650 2126 50  0000 C CNN
-F 2 "" H 3650 1550 50  0001 C CNN
-F 3 "" H 3650 1550 50  0001 C CNN
-	1    3650 1550
+P 3900 1550
+F 0 "SW1" H 3900 2217 50  0000 C CNN
+F 1 "SW_DIP_x08" H 3900 2126 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_SMDSocket_SmallPads" H 3900 1550 50  0001 C CNN
+F 3 "" H 3900 1550 50  0001 C CNN
+	1    3900 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 3250 1150 0    50   Input ~ 0
-bus1
-Text GLabel 3250 1250 0    50   Input ~ 0
-bus2
-Text GLabel 3250 1350 0    50   Input ~ 0
+Text GLabel 3500 1150 0    50   Input ~ 0
 bus3
-Text GLabel 3250 1450 0    50   Input ~ 0
+Text GLabel 3500 1250 0    50   Input ~ 0
 bus4
-Text GLabel 3250 1550 0    50   Input ~ 0
+Text GLabel 3500 1350 0    50   Input ~ 0
 bus5
-Text GLabel 3250 1650 0    50   Input ~ 0
+Text GLabel 3500 1450 0    50   Input ~ 0
 bus6
-Text GLabel 3250 1750 0    50   Input ~ 0
+Text GLabel 3500 1550 0    50   Input ~ 0
 bus7
 Wire Wire Line
-	3250 1150 3350 1150
+	3500 1150 3600 1150
 Wire Wire Line
-	3350 1250 3250 1250
+	3500 1250 3600 1250
 Wire Wire Line
-	3250 1350 3350 1350
+	3500 1350 3600 1350
 Wire Wire Line
-	3250 1450 3350 1450
+	3500 1450 3600 1450
 Wire Wire Line
-	3250 1550 3350 1550
+	3500 1550 3600 1550
 Wire Wire Line
-	3250 1650 3350 1650
-Wire Wire Line
-	3250 1750 3350 1750
-Text GLabel 3250 1850 0    50   Input ~ 0
+	3500 1650 3600 1650
+Text GLabel 3500 1650 0    50   Input ~ 0
 bus8
 Wire Wire Line
-	3250 1850 3350 1850
-Text GLabel 4300 1850 2    50   Input ~ 0
+	3500 1750 3600 1750
+Text GLabel 4550 1850 2    50   Input ~ 0
 trigger
 Wire Wire Line
-	3950 1150 3950 1250
-Connection ~ 3950 1250
+	4200 1150 4200 1250
+Connection ~ 4200 1250
 Wire Wire Line
-	3950 1250 3950 1350
-Connection ~ 3950 1350
+	4200 1250 4200 1350
+Connection ~ 4200 1350
 Wire Wire Line
-	3950 1350 3950 1450
-Connection ~ 3950 1450
+	4200 1350 4200 1450
+Connection ~ 4200 1450
 Wire Wire Line
-	3950 1450 3950 1550
-Connection ~ 3950 1550
+	4200 1450 4200 1550
+Connection ~ 4200 1550
 Wire Wire Line
-	3950 1550 3950 1650
-Connection ~ 3950 1650
+	4200 1550 4200 1650
+Connection ~ 4200 1650
 Wire Wire Line
-	3950 1650 3950 1750
-Connection ~ 3950 1750
+	4200 1650 4200 1750
+Connection ~ 4200 1750
 Wire Wire Line
-	3950 1750 3950 1850
+	4200 1750 4200 1850
 Wire Wire Line
-	3950 1850 4300 1850
-Connection ~ 3950 1850
+	4200 1850 4550 1850
+Connection ~ 4200 1850
+Text GLabel 3500 1750 0    50   Input ~ 0
+bus9
+Text GLabel 3500 1850 0    50   Input ~ 0
+bus10
+Wire Wire Line
+	3500 1850 3600 1850
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5C03D3D4
+P 2550 7050
+F 0 "H5" H 2650 7101 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2650 7010 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 2550 7050 50  0001 C CNN
+F 3 "~" H 2550 7050 50  0001 C CNN
+	1    2550 7050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2550 7150
 $EndSCHEMATC
