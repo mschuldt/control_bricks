@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 15)
     (tracks 47)
     (zones 0)
     (modules 15)
@@ -1341,6 +1341,12 @@
     )
   )
 
+  (gr_text 5v (at 85.09 98.298 270) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text GND (at 87.63 98.806 270) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text Signal (at 113.538 100.076 270) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
